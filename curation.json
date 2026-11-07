@@ -8,32 +8,199 @@
     "varnholt.github.io": "Portfolio infrastructure."
   },
   "groups": [
-    {"id":"libraries", "title":"Tiny libraries", "intro":"Small C++23 libraries for geometry, simulation, file formats and procedural worlds."},
-    {"id":"games", "title":"Games & engines", "intro":"Platformers, multiplayer arenas and the engines behind them."},
-    {"id":"tools", "title":"Tools & applications", "intro":"Editors, readers and workbenches built to make a particular job easier."},
-    {"id":"hardware", "title":"Hardware & embedded", "intro":"Software that reaches beyond the screen."},
-    {"id":"more", "title":"More projects", "intro":"Earlier experiments, small utilities and a few things from the kitchen."}
+    {
+      "id": "libraries",
+      "title": "Tiny libraries",
+      "intro": "Small C++23 libraries for geometry, simulation, file formats and procedural worlds."
+    },
+    {
+      "id": "games",
+      "title": "Games & engines",
+      "intro": "Platformers, multiplayer arenas and the engines behind them."
+    },
+    {
+      "id": "tools",
+      "title": "Tools & applications",
+      "intro": "Editors, readers and workbenches built to make a particular job easier."
+    },
+    {
+      "id": "hardware",
+      "title": "Hardware & embedded",
+      "intro": "Software that reaches beyond the screen."
+    },
+    {
+      "id": "more",
+      "title": "More projects",
+      "intro": "Earlier experiments, small utilities and a few things from the kitchen."
+    }
   ],
   "projects": {
-    "tinyshp":{"group":"libraries","description":"Load ESRI shapefiles, attributes and projections in one C++23 header. Explore the results on a map, globe or in 3D.","image":"doc/testbed.png","alt":"Cambridge buildings visualized by height in the tinyshp testbed","demo":"https://varnholt.github.io/tinyshp/","tech":"C++23 · WebGL2"},
-    "tinysph":{"group":"libraries","description":"A fluid simulation library with CPU and GPU solvers, colliders, emitters and an interactive water sandbox.","image":"docs/images/dam_break.png","alt":"A simulated volume of water breaking around a sphere","demo":"https://varnholt.github.io/tinysph/","tech":"C++23 · WebGPU"},
-    "tinyverlet":{"group":"libraries","description":"Particles and constraints for cloth, ropes and soft bodies, with collisions, wind and tearing. All in one header.","image":"doc/testbed.png","alt":"Simulated cloth sheets draped over a sphere","demo":"https://varnholt.github.io/tinyverlet/","tech":"C++23 · WebGL2"},
-    "tinywfc":{"group":"libraries","description":"Wave function collapse for 2D and 3D grids. Socket rules, backtracking and parallel restarts assemble a procedural city.","image":"doc/city.gif","alt":"A procedural city assembled by wave function collapse","demo":"https://varnholt.github.io/tinywfc/","tech":"C++23 · WebGL2"},
-    "tinysubdiv":{"group":"libraries","description":"Loop subdivision for triangle meshes in one header, with seam welding and a browser testbed.","image":"doc/levels.png","alt":"The letter T at four mesh subdivision levels","demo":"https://varnholt.github.io/tinysubdiv/","tech":"C++23 · WebGL2"},
-    "tinypsd":{"group":"libraries","description":"Read Photoshop layers, groups, composite images and paths. Bounds checked, fuzzed, and available in C++ and Rust.","tech":"C++23 · Rust"},
-    "tinyeasings":{"group":"libraries","description":"Thirty easing curves in one dependency-free C++23 header, with compile-time evaluation and runtime selection.","tech":"C++23"},
-    "deceptus_engine":{"group":"games","title":"Deceptus Engine","description":"A C++23 and Lua platformer engine with deferred lighting, water, weather and Tiled levels. Desktop, browser and Switch homebrew builds.","image":"doc/screenshots/screenshot_github.png","alt":"A scene from the Deceptus platformer engine","demo":"https://deceptus.itch.io/deceptus","tech":"C++23 · Lua · SFML"},
-    "dynablaster_revenge_sdl":{"group":"games","title":"Dynablaster Revenge · SDL","description":"The SDL3 rewrite of Dynablaster Revenge: networked multiplayer, real-time 3D rendering and a dedicated game server.","tech":"C++23 · SDL3 · OpenGL ES"},
-    "dynablaster_revenge":{"group":"games","title":"Dynablaster Revenge","description":"The original multiplayer Dynablaster remake, with real-time 3D arenas. A team project; code and team lead by Matthias Varnholt.","image":"doc/screenshot_1.jpg","alt":"A three-dimensional Dynablaster Revenge arena","tech":"C++ · Qt · OpenGL"},
-    "tilezeitjobb":{"group":"tools","description":"A pixel and tile editor for the NES. Draw with hardware palettes, arrange sprites and export a runnable ROM.","image":"docs/images/editor.png","alt":"NES pixel artwork open in the tilezeitjobb editor","demo":"https://varnholt.github.io/tilezeitjobb/","tech":"C++23 · NES"},
-    "oneam":{"group":"tools","description":"A small cross-platform comic reader with background decoding, page prefetching and a built-in archive backend.","image":"docs/images/reader.png","alt":"The oneam comic reader showing a page and navigation controls","demo":"https://varnholt.github.io/oneam/","tech":"C++23 · SDL3"},
-    "opengl_blending":{"group":"tools","title":"OpenGL Blending","description":"A visual workbench for blend factors and equations. Try your own textures and copy the corresponding OpenGL calls.","image":"resources/screenshot.png","alt":"Source, destination and blended result in the OpenGL blending workbench","demo":"https://varnholt.github.io/opengl_blending/","tech":"JavaScript · WebGL"},
-    "agent-baton":{"group":"tools","description":"Let coding agents exchange verified facts and wait on repository events without a human relaying messages.","tech":"Python · CLI"},
-    "clang-tidy-gui":{"group":"tools","description":"A small interface for run-clang-tidy.py. Select patches and apply them sequentially to avoid conflicting changes.","image":"doc/screenshot_main.png","alt":"The clang-tidy-gui patch selection interface","tech":"Rust"},
-    "tokiboks":{"group":"hardware","description":"An RFID music player for toddlers. Tap an album card; four colored buttons control playback and a sleep timer.","tech":"ESP32 · Python · Raspberry Pi"},
-    "touchgfx_projects":{"group":"hardware","title":"TouchGFX projects","description":"An embedded chess clock project built with TouchGFX.","tech":"C · TouchGFX"},
-    "smoothed_particle_hydrodynamics":{"group":"more","title":"Smoothed Particle Hydrodynamics","description":"An earlier C++ fluid simulation experiment, with implementation notes on the SPH equations.","tech":"C++ · Simulation"},
-    "vocabulary_trainer":{"group":"more","title":"Vocabulary Trainer","description":"A desktop flashcard trainer that reads vocabulary from simple CSV files.","tech":"C++ · Desktop"},
-    "cooking-baking-recipes":{"group":"more","title":"Cooking & baking","description":"Favorite recipes for pizza, vanilla cheesecake and tiramisu.","tech":"Recipes"}
+    "tinyshp": {
+      "group": "libraries",
+      "description": "Load ESRI shapefiles, attributes and projections in one C++23 header. Explore the results on a map, globe or in 3D.",
+      "image": "doc/testbed.png",
+      "alt": "Cambridge buildings visualized by height in the tinyshp testbed",
+      "demo": "https://varnholt.github.io/tinyshp/",
+      "tech": "C++23 · WebGL2"
+    },
+    "tinysph": {
+      "group": "libraries",
+      "description": "A fluid simulation library with CPU and GPU solvers, colliders, emitters and an interactive water sandbox.",
+      "image": "docs/images/dam_break.png",
+      "alt": "A simulated volume of water breaking around a sphere",
+      "demo": "https://varnholt.github.io/tinysph/",
+      "tech": "C++23 · WebGPU"
+    },
+    "tinyverlet": {
+      "group": "libraries",
+      "description": "Particles and constraints for cloth, ropes and soft bodies, with collisions, wind and tearing. All in one header.",
+      "image": "doc/testbed.png",
+      "alt": "Simulated cloth sheets draped over a sphere",
+      "demo": "https://varnholt.github.io/tinyverlet/",
+      "tech": "C++23 · WebGL2"
+    },
+    "tinywfc": {
+      "group": "libraries",
+      "description": "Wave function collapse for 2D and 3D grids. Socket rules, backtracking and parallel restarts assemble a procedural city.",
+      "image": "doc/city.gif",
+      "alt": "A procedural city assembled by wave function collapse",
+      "demo": "https://varnholt.github.io/tinywfc/",
+      "tech": "C++23 · WebGL2"
+    },
+    "tinysubdiv": {
+      "group": "libraries",
+      "description": "Loop subdivision for triangle meshes in one header, with seam welding and a browser testbed.",
+      "image": "doc/levels.png",
+      "alt": "The letter T at four mesh subdivision levels",
+      "demo": "https://varnholt.github.io/tinysubdiv/",
+      "tech": "C++23 · WebGL2"
+    },
+    "tinypsd": {
+      "group": "libraries",
+      "description": "Read Photoshop layers, groups, composite images and paths. Bounds checked, fuzzed, and available in C++ and Rust.",
+      "tech": "C++23 · Rust",
+      "image": "doc/overview.svg",
+      "alt": "Illustrated API overview of PSD layers, metadata and decoded pixels",
+      "fit": "contain"
+    },
+    "tinyeasings": {
+      "group": "libraries",
+      "description": "Thirty easing curves in one dependency-free C++23 header, with compile-time evaluation and runtime selection.",
+      "tech": "C++23 · Rust",
+      "image": "rust/demo/screenshot.png",
+      "alt": "Interactive easing demo plotting an easeOutBounce curve",
+      "fit": "contain",
+      "demo": "https://varnholt.github.io/tinyeasings/"
+    },
+    "deceptus_engine": {
+      "group": "games",
+      "title": "Deceptus Engine",
+      "description": "A C++23 and Lua platformer engine with deferred lighting, water, weather and Tiled levels. Desktop, browser and Switch homebrew builds.",
+      "image": "doc/screenshots/screenshot_github.png",
+      "alt": "A scene from the Deceptus platformer engine",
+      "demo": "https://deceptus.itch.io/deceptus",
+      "tech": "C++23 · Lua · SFML"
+    },
+    "dynablaster_revenge_sdl": {
+      "group": "games",
+      "title": "Dynablaster Revenge · SDL",
+      "description": "The SDL3 rewrite of Dynablaster Revenge: networked multiplayer, real-time 3D rendering and a dedicated game server.",
+      "tech": "C++23 · SDL3 · OpenGL ES",
+      "image": "client/tests/comparison_output/mainmenu_port.png",
+      "alt": "Main menu captured from the Dynablaster Revenge SDL port"
+    },
+    "dynablaster_revenge": {
+      "group": "games",
+      "title": "Dynablaster Revenge",
+      "description": "The original multiplayer Dynablaster remake, with real-time 3D arenas. A team project; code and team lead by Matthias Varnholt.",
+      "image": "doc/screenshot_1.jpg",
+      "alt": "A three-dimensional Dynablaster Revenge arena",
+      "tech": "C++ · Qt · OpenGL"
+    },
+    "tilezeitjobb": {
+      "group": "tools",
+      "description": "A pixel and tile editor for the NES. Draw with hardware palettes, arrange sprites and export a runnable ROM.",
+      "image": "docs/images/editor.png",
+      "alt": "NES pixel artwork open in the tilezeitjobb editor",
+      "demo": "https://varnholt.github.io/tilezeitjobb/",
+      "tech": "C++23 · NES"
+    },
+    "oneam": {
+      "group": "tools",
+      "description": "A small cross-platform comic reader with background decoding, page prefetching and a built-in archive backend.",
+      "image": "docs/images/reader.png",
+      "alt": "The one:am comic reader showing a page and navigation controls",
+      "demo": "https://varnholt.github.io/oneam/",
+      "tech": "C++23 · SDL3",
+      "title": "one:am"
+    },
+    "opengl_blending": {
+      "group": "tools",
+      "title": "OpenGL Blending",
+      "description": "A visual workbench for blend factors and equations. Try your own textures and copy the corresponding OpenGL calls.",
+      "image": "resources/screenshot.png",
+      "alt": "Source, destination and blended result in the OpenGL blending workbench",
+      "demo": "https://varnholt.github.io/opengl_blending/",
+      "tech": "JavaScript · WebGL"
+    },
+    "agent-baton": {
+      "group": "tools",
+      "description": "Let coding agents exchange verified facts and wait on repository events without a human relaying messages.",
+      "tech": "Python · CLI",
+      "image": "docs/demo/demo.gif",
+      "alt": "Terminal recording of agents publishing and verifying repository facts",
+      "fit": "contain"
+    },
+    "clang-tidy-gui": {
+      "group": "tools",
+      "description": "A small interface for run-clang-tidy.py. Select patches and apply them sequentially to avoid conflicting changes.",
+      "image": "doc/screenshot_main.png",
+      "alt": "The clang-tidy-gui patch selection interface",
+      "tech": "Rust"
+    },
+    "tokiboks": {
+      "group": "hardware",
+      "description": "An RFID music player for toddlers. Tap an album card; four colored buttons control playback and a sleep timer.",
+      "tech": "ESP32 · Python · Raspberry Pi",
+      "image": "docs/system.svg",
+      "alt": "System overview: RFID cards, ESP32 control and Python audio playback",
+      "fit": "contain"
+    },
+    "touchgfx_projects": {
+      "group": "hardware",
+      "title": "TouchGFX projects",
+      "description": "A touchscreen chess clock for the STM32F769I-DISCO, with time-control presets, Fischer increments and a printable enclosure.",
+      "tech": "C · TouchGFX",
+      "image": "ChessClock/doc/game.png",
+      "alt": "Touchscreen chess clock showing Black to play",
+      "fit": "contain"
+    },
+    "smoothed_particle_hydrodynamics": {
+      "group": "more",
+      "title": "Smoothed Particle Hydrodynamics",
+      "description": "An earlier C++ fluid simulation experiment, with implementation notes on the SPH equations.",
+      "tech": "C++ · Simulation",
+      "image": "sph_anim.gif",
+      "alt": "The original desktop SPH particle simulation in motion",
+      "fit": "contain"
+    },
+    "vocabulary_trainer": {
+      "group": "more",
+      "title": "Vocabulary Trainer",
+      "description": "A desktop flashcard trainer that reads vocabulary from simple CSV files.",
+      "tech": "C++ · Desktop",
+      "image": "doc/screenshot_2.png",
+      "alt": "Vocabulary Trainer desktop flashcard interface",
+      "fit": "contain"
+    },
+    "cooking-baking-recipes": {
+      "group": "more",
+      "title": "Cooking & baking",
+      "description": "Favorite recipes for pizza, vanilla cheesecake and tiramisu.",
+      "tech": "Recipes",
+      "image": "baking/images/tiramisu/biscuit-layers.svg",
+      "alt": "Recipe diagram showing alternating biscuit directions in tiramisu",
+      "fit": "contain"
+    }
   }
 }

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="310" viewBox="0 0 900 310" role="img" aria-labelledby="title desc">
+<title id="title">Alternate the biscuit direction in each layer</title>
+<desc id="desc">Top views of three trays of savoiardi: vertical, horizontal, vertical. Add cream between layers.</desc>
+<rect width="900" height="310" rx="16" fill="#fffaf2"/>
+<g font-family="Arial, sans-serif" fill="#49372c" text-anchor="middle">
+<text x="450" y="32" font-size="21" font-weight="bold">Alternate the biscuit direction</text>
+<text x="150" y="68" font-size="18">Layer 1 (top view)</text>
+<rect x="35" y="84" width="230" height="160" rx="12" fill="#f2e7d4" stroke="#927b64" stroke-width="2"/>
+<rect x="48" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="78" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="108" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="138" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="168" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="198" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="228" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<text x="450" y="68" font-size="18">Layer 2 (top view)</text>
+<rect x="335" y="84" width="230" height="160" rx="12" fill="#f2e7d4" stroke="#927b64" stroke-width="2"/>
+<rect x="348" y="97" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="348" y="124" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="348" y="151" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="348" y="178" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="348" y="205" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
+<text x="750" y="68" font-size="18">Layer 3 (top view)</text>
+<rect x="635" y="84" width="230" height="160" rx="12" fill="#f2e7d4" stroke="#927b64" stroke-width="2"/>
+<rect x="648" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="678" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="708" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="738" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="768" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="798" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<rect x="828" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
+<text x="450" y="280" font-size="17">Thin cream layer between biscuit layers. Repeat as needed.</text>
+</g></svg>
