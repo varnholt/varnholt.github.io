@@ -1,0 +1,35 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const repos = JSON.parse(fs.readFileSync('repos.json', 'utf8'));
+const config = JSON.parse(fs.readFileSync('curation.json', 'utf8'));
+const elements = new Map();
+function element(id) {
+  if (!elements.has(id)) elements.set(id, {innerHTML:'', textContent:'', value:'', checked:false, events:{}, addEventListener(name, fn){this.events[name]=fn;}, querySelectorAll(){return [];}});
+  return elements.get(id);
+}
+const context = vm.createContext({URL, Map, console, document:{querySelector:element}, fetch:async path => ({ok:true,json:async()=>path === 'repos.json' ? repos : config})});
+vm.runInContext(fs.readFileSync('app.js','utf8'), context);
+await new Promise(resolve => setImmediate(resolve));
+assert.equal(element('#total').textContent, '20');
+assert.equal((element('#collection').innerHTML.match(/<article /g)||[]).length,20);
+for (const name of Object.keys(config.excluded)) assert.ok(!element('#collection').innerHTML.includes(`https://github.com/varnholt/${name}\"`));
+element('#search').value='cloth';
+element('#search').events.input();
+assert.equal((element('#collection').innerHTML.match(/<article /g)||[]).length,1);
+element('#search').value='';
+element('#demo-only').checked=true;
+element('#demo-only').events.change();
+assert.equal((element('#collection').innerHTML.match(/<article /g)||[]).length,9);
+element('#filters').events.click({target:{closest:()=>({dataset:{group:'hardware'}})}});
+assert.ok(element('#collection').innerHTML.includes('No matching projects'));
+element('#demo-only').checked=false;
+element('#demo-only').events.change();
+assert.equal((element('#collection').innerHTML.match(/<article /g)||[]).length,2);
+element('#search').value='<script>';
+element('#search').events.input();
+assert.ok(element('#collection').innerHTML.includes('No matching projects'));
+for(const [name,p] of Object.entries(config.projects)) if(p.image) assert.ok(fs.existsSync(`assets/${name}.${p.image.split('.').pop()}`));
+assert.ok(repos.every(r=>r.private !== true));
+assert.ok(repos.every(r=>config.projects[r.name] || config.excluded[r.name]));
+console.log('Passed: repository coverage, exclusions, images, search, category/demo combinations and empty states.');
