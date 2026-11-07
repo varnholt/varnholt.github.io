@@ -106,14 +106,14 @@
       "title": "Dynablaster Revenge · SDL",
       "description": "The SDL3 rewrite of Dynablaster Revenge: networked multiplayer, real-time 3D rendering and a dedicated game server.",
       "tech": "C++23 · SDL3 · OpenGL ES",
-      "image": "client/tests/comparison_output/mainmenu_port.png",
-      "alt": "Main menu captured from the Dynablaster Revenge SDL port"
+      "image": "doc/gameplay.jpg",
+      "alt": "Dynablaster Revenge gameplay from the original build, representative of the SDL port's shared visuals"
     },
     "dynablaster_revenge": {
       "group": "games",
       "title": "Dynablaster Revenge",
       "description": "The original multiplayer Dynablaster remake, with real-time 3D arenas. A team project; code and team lead by Matthias Varnholt.",
-      "image": "doc/screenshot_1.jpg",
+      "image": "doc/screenshot_3.jpg",
       "alt": "A three-dimensional Dynablaster Revenge arena",
       "tech": "C++ · Qt · OpenGL"
     },
