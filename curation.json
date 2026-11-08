@@ -169,10 +169,10 @@
     "touchgfx_projects": {
       "group": "hardware",
       "title": "TouchGFX projects",
-      "description": "A touchscreen chess clock for the STM32F769I-DISCO, with time-control presets, Fischer increments and a printable enclosure.",
-      "tech": "C · TouchGFX",
-      "image": "ChessClock/doc/game.png",
-      "alt": "Touchscreen chess clock showing Black to play",
+      "description": "A touchscreen chess clock plus touch-driven smoke, a reflective 3D torus and polygon effects for the STM32F769I-DISCO.",
+      "tech": "C++ · STM32 · TouchGFX",
+      "image": "framebuffer_demo/doc/torus.png",
+      "alt": "Reflective 3D torus rendered by the TouchGFX framebuffer demo",
       "fit": "contain"
     },
     "smoothed_particle_hydrodynamics": {
