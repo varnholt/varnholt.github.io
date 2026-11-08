@@ -10,4 +10,6 @@ Project metadata is refreshed during deployment every Monday and on pushes. To r
 
 Screenshots are copied from their corresponding project repositories into `assets/`; their original project licenses and credits apply. Update the local copy when a project's screenshot changes.
 
+The one:am card uses a locally authored vector illustration, `assets/oneam.svg`, with an original placeholder comic rather than a screenshot containing third-party comic artwork.
+
 Deployment uses GitHub Pages through `.github/workflows/pages.yml`.

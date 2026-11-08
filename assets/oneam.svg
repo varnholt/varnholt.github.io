@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="800" viewBox="0 0 1100 800" role="img" aria-labelledby="title desc">
+  <title id="title">one:am reader preview</title>
+  <desc id="desc">An illustrated reader with an original geometric placeholder comic. No third-party comic artwork.</desc>
+  <defs>
+    <g id="moon"><circle r="35" fill="#f3d699"/><circle cx="15" cy="-10" r="31" fill="#293e53"/></g>
+    <g id="book"><path d="M-62-25 Q-30-38 0-22 Q30-38 62-25 V37 Q30 24 0 40 Q-30 24-62 37Z" fill="#e8ede3" stroke="#8cbaa7" stroke-width="6"/><path d="M0-22V40" stroke="#8cbaa7" stroke-width="3"/></g>
+    <g id="star" fill="#f3d699"><circle r="3"/></g>
+  </defs>
+  <rect width="1100" height="800" fill="#12161c"/>
+  <g font-family="Segoe UI, sans-serif" fill="#e1e6ed">
+    <path d="M0 0H1100V72H0Z M0 728H1100V800H0Z" fill="#1b2029"/>
+    <g fill="#252c36"><rect x="12" y="12" width="112" height="48" rx="10"/><rect x="132" y="12" width="136" height="48" rx="10"/><rect x="872" y="12" width="104" height="48" rx="10"/><rect x="984" y="12" width="104" height="48" rx="10"/><rect x="12" y="740" width="128" height="48" rx="10"/><rect x="960" y="740" width="128" height="48" rx="10"/></g>
+    <g fill="none" stroke="#e1e6ed" stroke-width="2"><path d="M29 27h6v6h-6z m10 0h6v6h-6z m-10 10h6v6h-6z m10 0h6v6h-6z"/><path d="M150 29q8-4 16 0q8-4 16 0v18q-8-4-16 0q-8-4-16 0z m16 0v18"/><path d="M890 31h11l4 5h13v13h-28z M1002 30h17m-17 7h17m-17 7h17 M40 756l-8 8 8 8 M982 756l8 8-8 8"/></g>
+    <g font-size="14"><text x="58" y="41">Library</text><text x="194" y="41">Read</text><text x="930" y="41">Open</text><text x="1030" y="41">Menu</text><text x="56" y="769">Previous</text><text x="1005" y="769">Next</text><text x="530" y="762">1 / 3</text></g>
+    <text x="153" y="782" font-size="12" fill="#919da9">Sample comic.cbz</text>
+    <rect x="316" y="88" width="468" height="624" fill="#f4f0e6"/>
+    <text x="344" y="135" font-size="26" font-weight="600" letter-spacing="3" fill="#293e53">AFTER HOURS</text>
+    <text x="345" y="159" font-size="12" letter-spacing="2" fill="#66776e">AN ORIGINAL PLACEHOLDER COMIC</text>
+    <g fill="#293e53"><rect x="340" y="182" width="420" height="205" rx="5"/><rect x="340" y="402" width="202" height="193" rx="5"/><rect x="558" y="402" width="202" height="193" rx="5"/></g>
+    <use href="#moon" x="690" y="243"/>
+    <g><use href="#star" x="380" y="216"/><use href="#star" x="468" y="239"/><use href="#star" x="573" y="205"/><use href="#star" x="621" y="287"/><use href="#star" x="727" y="334"/></g>
+    <path d="M340 347l85-60 70 44 100-35 90 54 75-29v66H340Z" fill="#1b2c3c"/>
+    <rect x="412" y="319" width="58" height="68" fill="#c68d62"/><rect x="425" y="335" width="30" height="32" fill="#f3d699"/>
+    <circle cx="441" cy="494" r="57" fill="#f4f0e6" stroke="#8cbaa7" stroke-width="6"/><path d="M441 453v41l24-17" fill="none" stroke="#293e53" stroke-width="5" stroke-linecap="round"/>
+    <use href="#book" x="659" y="505"/>
+    <g font-size="14" fill="#66776e"><text x="345" y="626">The world can wait.</text><text x="345" y="651">There is always one more page.</text></g>
+    <text x="344" y="689" font-size="12" fill="#66776e">one:am / sample artwork</text><text x="737" y="689" font-size="12" fill="#66776e">01</text>
+  </g>
+</svg>

@@ -128,8 +128,9 @@
     "oneam": {
       "group": "tools",
       "description": "A small cross-platform comic reader with background decoding, page prefetching and a built-in archive backend.",
-      "image": "docs/images/reader.png",
-      "alt": "The one:am comic reader showing a page and navigation controls",
+      "image": "portfolio/reader-placeholder.svg",
+      "alt": "Illustrated one:am reader preview with an original placeholder comic and navigation controls",
+      "fit": "contain",
       "demo": "https://varnholt.github.io/oneam/",
       "tech": "C++23 · SDL3",
       "title": "one:am"
@@ -153,10 +154,11 @@
     },
     "clang-tidy-gui": {
       "group": "tools",
-      "description": "A small interface for run-clang-tidy.py. Select patches and apply them sequentially to avoid conflicting changes.",
+      "description": "A desktop workspace for clang-tidy. Search checks from your installed toolchain, run them one at a time, and inspect diagnostics before applying fixes.",
       "image": "doc/screenshot_main.png",
-      "alt": "The clang-tidy-gui patch selection interface",
-      "tech": "Rust"
+      "alt": "The redesigned clang-tidy-gui workspace with project setup, searchable checks and run output",
+      "fit": "contain",
+      "tech": "Rust · egui"
     },
     "tokiboks": {
       "group": "hardware",
@@ -185,12 +187,13 @@
       "fit": "contain"
     },
     "vocabulary_trainer": {
-      "group": "more",
-      "title": "Vocabulary Trainer",
-      "description": "A desktop flashcard trainer that reads vocabulary from simple CSV files.",
-      "tech": "C++ · Desktop",
-      "image": "doc/screenshot_2.png",
-      "alt": "Vocabulary Trainer desktop flashcard interface",
+      "group": "tools",
+      "title": "All the Vocabulary",
+      "description": "Practice vocabulary with CSV flashcards, included Danish lists and a responsive browser interface. Also available as an offline Android app.",
+      "tech": "C++ · WebAssembly · Android",
+      "image": "doc/web-practice.png",
+      "alt": "All the Vocabulary browser interface showing a revealed translation and practice controls",
+      "demo": "https://varnholt.github.io/vocabulary_trainer/",
       "fit": "contain"
     },
     "cooking-baking-recipes": {
