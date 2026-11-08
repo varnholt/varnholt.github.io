@@ -174,8 +174,40 @@
       "description": "A touchscreen chess clock plus touch-driven smoke, a reflective 3D torus and polygon effects for the STM32F769I-DISCO.",
       "tech": "C++ · STM32 · TouchGFX",
       "image": "framebuffer_demo/doc/torus.png",
-      "alt": "Reflective 3D torus rendered by the TouchGFX framebuffer demo",
-      "fit": "contain"
+      "alt": "Reflective 3D torus with its opening visible",
+      "fit": "contain",
+      "images": [
+        {
+          "image": "framebuffer_demo/doc/torus.png",
+          "label": "Torus",
+          "alt": "Reflective 3D torus with its opening visible"
+        },
+        {
+          "image": "framebuffer_demo/doc/smoke.png",
+          "label": "Smoke",
+          "alt": "Flowing red, orange and blue smoke against a black background"
+        },
+        {
+          "image": "framebuffer_demo/doc/shapes.png",
+          "label": "Shapes",
+          "alt": "Centered black and white polygon rings"
+        },
+        {
+          "image": "framebuffer_demo/doc/home.png",
+          "label": "Home",
+          "alt": "Framebuffer demo home screen with three effect choices"
+        },
+        {
+          "image": "ChessClock/doc/game.png",
+          "label": "Chess clock",
+          "alt": "Chess clock game screen with separate touch areas for both players"
+        },
+        {
+          "image": "ChessClock/doc/settings.png",
+          "label": "Clock settings",
+          "alt": "Chess clock time-control settings"
+        }
+      ]
     },
     "smoothed_particle_hydrodynamics": {
       "group": "more",

@@ -11,9 +11,12 @@ function card(p) {
   const url = safeURL(p.html_url);
   const demo = safeURL(p.demo);
   const title = escapeHTML(p.title || p.name);
-  const image = p.image ? `assets/${encodeURIComponent(p.name)}.${p.image.split('.').pop()}` : '';
-  const visual = image
-    ? `<div class="visual ${p.fit === 'contain' || p.name === 'tinysubdiv' ? 'contain' : ''}"><img src="${image}" alt="${escapeHTML(p.alt)}" loading="lazy" width="640" height="360"></div>`
+  const previews = p.images?.length ? p.images : p.image ? [{image:p.image, alt:p.alt}] : [];
+  const source = (preview, index) => `assets/${encodeURIComponent(p.name)}${p.images?.length ? `-${index}` : ''}.${preview.image.split('.').pop()}`;
+  const image = (preview, index) => `<div class="visual ${p.fit === 'contain' || p.name === 'tinysubdiv' ? 'contain' : ''}"><img src="${escapeHTML(source(preview, index))}" alt="${escapeHTML(preview.alt)}" loading="lazy" width="800" height="480"></div>`;
+  const visual = previews.length > 1
+    ? `<div class="preview-gallery" data-gallery><div class="preview-stage">${previews.map((preview, index) => `<figure data-preview-panel${index ? ' hidden' : ''}>${image(preview, index)}<figcaption><span>${escapeHTML(preview.label)}</span><a href="${escapeHTML(source(preview, index))}" target="_blank" rel="noopener">Full size ↗</a></figcaption></figure>`).join('')}</div><div class="preview-picker" role="group" aria-label="${title} screenshots">${previews.map((preview, index) => `<button type="button" data-preview="${index}" aria-pressed="${index === 0}">${escapeHTML(preview.label)}</button>`).join('')}</div></div>`
+    : previews.length ? image(previews[0], 0)
     : `<div class="visual code" aria-hidden="true"><span class="symbol">${p.group === 'hardware' ? '⌁' : '{ }'}</span><span class="code-name">${escapeHTML(p.name)}</span></div>`;
   return `<article class="card">${visual}<div class="card-body"><p class="tech">${escapeHTML(p.tech || p.language || 'Project')}</p><h4><a href="${url}">${title}</a></h4><p class="description">${escapeHTML(p.description || 'Explore the source and documentation on GitHub.')}</p><div class="card-links">${demo ? `<a class="demo-link" href="${demo}">Try it live ↗</a>` : ''}<a href="${url}">Source ↗</a>${p.stargazers_count ? `<span class="stars" aria-label="${p.stargazers_count} GitHub stars">☆ ${p.stargazers_count}</span>` : ''}</div></div></article>`;
 }
@@ -49,6 +52,17 @@ async function start() {
       selected = button.dataset.group;
       filters.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
       render();
+    });
+    collection.addEventListener('click', event => {
+      const button = event.target.closest('[data-preview]');
+      if (!button) return;
+      const gallery = button.closest('[data-gallery]');
+      if (!gallery) return;
+      const panels = gallery.querySelectorAll('[data-preview-panel]');
+      const index = Number(button.dataset.preview);
+      if (!Number.isInteger(index) || index < 0 || index >= panels.length) return;
+      panels.forEach((panel, i) => { panel.hidden = i !== index; });
+      gallery.querySelectorAll('[data-preview]').forEach((item, i) => item.setAttribute('aria-pressed', String(i === index)));
     });
     search.addEventListener('input', render);
     demoOnly.addEventListener('change', render);

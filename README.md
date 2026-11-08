@@ -13,3 +13,9 @@ Screenshots are copied from their corresponding project repositories into `asset
 The one:am card uses a locally authored vector illustration, `assets/oneam.svg`, with an original placeholder comic rather than a screenshot containing third-party comic artwork.
 
 Deployment uses GitHub Pages through `.github/workflows/pages.yml`.
+
+Projects with multiple screens can define an `images` list with `image`, `label` and
+`alt` for each capture. Copy those files into `assets/<repository>-0.png`,
+`assets/<repository>-1.png`, `-2.png`, and so on. The card shows a labeled screen
+picker and a full-size link for each capture. Keep the first `image`/`alt` fields
+and `assets/<repository>.png` as the fallback for clients using an older copy of the site script.

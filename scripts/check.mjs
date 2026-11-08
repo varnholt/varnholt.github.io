@@ -15,7 +15,7 @@ const included = repos.filter(r => !config.excluded[r.name] && (!r.fork || confi
 assert.equal(Number(element('#total').textContent), included.length);
 assert.equal((element('#collection').innerHTML.match(/<article /g)||[]).length,included.length);
 assert.ok(element('#collection').innerHTML.includes('one:am'));
-assert.equal((element('#collection').innerHTML.match(/<img /g)||[]).length,Object.keys(config.projects).length);
+assert.equal((element('#collection').innerHTML.match(/<img /g)||[]).length,Object.values(config.projects).reduce((sum, project) => sum + (project.images?.length || Number(Boolean(project.image))), 0));
 for (const name of Object.keys(config.excluded)) assert.ok(!element('#collection').innerHTML.includes(`https://github.com/varnholt/${name}\"`));
 element('#search').value='cloth';
 element('#search').events.input();
@@ -32,6 +32,23 @@ assert.equal((element('#collection').innerHTML.match(/<article /g)||[]).length,2
 element('#search').value='<script>';
 element('#search').events.input();
 assert.ok(element('#collection').innerHTML.includes('No matching projects'));
-for(const [name,p] of Object.entries(config.projects)) if(p.image) assert.ok(fs.existsSync(`assets/${name}.${p.image.split('.').pop()}`));
+for (const [name, project] of Object.entries(config.projects)) {
+  const images = project.images?.length ? project.images : project.image ? [{image:project.image}] : [];
+  images.forEach((image, index) => assert.ok(fs.existsSync(`assets/${name}${project.images?.length ? `-${index}` : ''}.${image.image.split('.').pop()}`)));
+}
+const panels = Array.from({length:6}, (_, index) => ({hidden:index !== 0}));
+const buttons = panels.map((_, index) => ({dataset:{preview:String(index)}, setAttribute(key, value){this[key] = value;}}));
+const gallery = {querySelectorAll(selector){return selector === '[data-preview-panel]' ? panels : buttons;}};
+buttons.forEach(button => { button.closest = () => gallery; });
+element('#collection').events.click({target:{closest:()=>buttons[2]}});
+assert.equal(panels.filter(panel=>!panel.hidden).length, 1);
+assert.equal(panels[2].hidden, false);
+assert.equal(buttons[2]['aria-pressed'], 'true');
+assert.equal(buttons[0]['aria-pressed'], 'false');
+buttons[2].dataset.preview = '999';
+element('#collection').events.click({target:{closest:()=>buttons[2]}});
+assert.equal(panels[2].hidden, false);
+const touchgfx = config.projects.touchgfx_projects;
+assert.deepEqual(touchgfx.images.map(image=>image.label), ['Torus','Smoke','Shapes','Home','Chess clock','Clock settings']);
 assert.ok(repos.every(r=>r.private !== true));
-console.log('Passed: repository coverage, exclusions, images, search, category/demo combinations and empty states.');
+console.log('Passed: repository coverage, exclusions, images, search, category/demo combinations, empty states and screenshot selection.');
