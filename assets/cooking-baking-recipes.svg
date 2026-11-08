@@ -1,33 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="310" viewBox="0 0 900 310" role="img" aria-labelledby="title desc">
-<title id="title">Alternate the biscuit direction in each layer</title>
-<desc id="desc">Top views of three trays of savoiardi: vertical, horizontal, vertical. Add cream between layers.</desc>
-<rect width="900" height="310" rx="16" fill="#fffaf2"/>
-<g font-family="Arial, sans-serif" fill="#49372c" text-anchor="middle">
-<text x="450" y="32" font-size="21" font-weight="bold">Alternate the biscuit direction</text>
-<text x="150" y="68" font-size="18">Layer 1 (top view)</text>
-<rect x="35" y="84" width="230" height="160" rx="12" fill="#f2e7d4" stroke="#927b64" stroke-width="2"/>
-<rect x="48" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="78" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="108" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="138" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="168" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="198" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="228" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<text x="450" y="68" font-size="18">Layer 2 (top view)</text>
-<rect x="335" y="84" width="230" height="160" rx="12" fill="#f2e7d4" stroke="#927b64" stroke-width="2"/>
-<rect x="348" y="97" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="348" y="124" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="348" y="151" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="348" y="178" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="348" y="205" width="204" height="22" rx="10" fill="#ddad64" stroke="#a87535"/>
-<text x="750" y="68" font-size="18">Layer 3 (top view)</text>
-<rect x="635" y="84" width="230" height="160" rx="12" fill="#f2e7d4" stroke="#927b64" stroke-width="2"/>
-<rect x="648" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="678" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="708" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="738" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="768" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="798" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<rect x="828" y="97" width="23" height="134" rx="10" fill="#ddad64" stroke="#a87535"/>
-<text x="450" y="280" font-size="17">Thin cream layer between biscuit layers. Repeat as needed.</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Cooking and baking</title>
+  <desc id="desc">A terracotta mixing bowl with a wooden spoon and whisk, framed by a sprig of herbs.</desc>
+  <rect width="800" height="450" fill="#faf5eb"/>
+  <path d="M210 329V218a190 190 0 0 1 380 0v111Z" fill="#efe4cf"/>
+  <ellipse cx="402" cy="361" rx="204" ry="15" fill="#e7dac3"/>
+  <g stroke="#96643e" stroke-width="12" stroke-linecap="round">
+    <path d="m345 275-71-110"/>
+  </g>
+  <ellipse cx="261" cy="144" rx="22" ry="39" transform="rotate(-33 261 144)" fill="#c79661"/>
+  <path d="m255 126 11 19" fill="none" stroke="#deb785" stroke-width="6" stroke-linecap="round"/>
+  <g fill="none" stroke="#68776b" stroke-width="5" stroke-linecap="round">
+    <path d="m464 263 43-80"/>
+    <ellipse cx="525" cy="150" rx="25" ry="49" transform="rotate(28 525 150)"/>
+    <ellipse cx="525" cy="150" rx="10" ry="49" transform="rotate(28 525 150)"/>
+    <path d="m506 184 38-71"/>
+  </g>
+  <path d="m465 264 25-47" stroke="#425b4b" stroke-width="15" stroke-linecap="round"/>
+  <path d="M254 250c8 69 49 103 146 103s138-34 146-103Z" fill="#b96e50"/>
+  <path d="M277 268c9 39 34 60 65 67" fill="none" stroke="#d89470" stroke-width="9" stroke-linecap="round"/>
+  <ellipse cx="400" cy="249" rx="147" ry="30" fill="#d5916c"/>
+  <ellipse cx="400" cy="247" rx="128" ry="20" fill="#f6e7ca"/>
+  <path d="M305 247c31-12 56 11 84 0s63-12 101-1" fill="none" stroke="#e5cea4" stroke-width="5" stroke-linecap="round"/>
+  <g fill="none" stroke="#6d805a" stroke-width="4" stroke-linecap="round">
+    <path d="M203 348c-7-29-20-49-39-65"/>
+    <path d="m190 318-22-4m31 24 14-21m-37-20 2-20"/>
+  </g>
+  <g fill="#91a17b">
+    <ellipse cx="162" cy="313" rx="14" ry="7" transform="rotate(16 162 313)"/>
+    <ellipse cx="215" cy="309" rx="7" ry="14" transform="rotate(24 215 309)"/>
+    <ellipse cx="179" cy="271" rx="7" ry="13" transform="rotate(-14 179 271)"/>
+    <ellipse cx="157" cy="278" rx="7" ry="14" transform="rotate(-42 157 278)"/>
+  </g>
+  <g fill="#c6af85">
+    <circle cx="583" cy="335" r="4"/>
+    <circle cx="603" cy="344" r="3"/>
+    <circle cx="590" cy="353" r="2"/>
+  </g>
+</svg>

@@ -231,10 +231,10 @@
     "cooking-baking-recipes": {
       "group": "more",
       "title": "Cooking & baking",
-      "description": "Favorite recipes for pizza, vanilla cheesecake and tiramisu.",
+      "description": "Davide's pizza and tiramisu, plus a classic vanilla cheesecake.",
       "tech": "Recipes",
-      "image": "baking/images/tiramisu/biscuit-layers.svg",
-      "alt": "Recipe diagram showing alternating biscuit directions in tiramisu",
+      "image": "assets/cooking-baking.svg",
+      "alt": "A terracotta mixing bowl with a wooden spoon, whisk and a sprig of herbs",
       "fit": "contain"
     }
   }
