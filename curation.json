@@ -127,12 +127,12 @@
     },
     "oneam": {
       "group": "tools",
-      "description": "A small cross-platform comic reader with background decoding, page prefetching and a built-in archive backend.",
+      "description": "A comic reader for Windows, Linux, macOS, Android and the browser, with background decoding, page prefetching and built-in archive support.",
       "image": "portfolio/reader-placeholder.svg",
       "alt": "Illustrated one:am reader preview with an original placeholder comic and navigation controls",
       "fit": "contain",
       "demo": "https://varnholt.github.io/oneam/",
-      "tech": "C++23 · SDL3",
+      "tech": "C++23 · SDL3 · Android · WebAssembly",
       "title": "one:am"
     },
     "opengl_blending": {
