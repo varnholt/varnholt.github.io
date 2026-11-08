@@ -45,7 +45,7 @@
         { "image": "docs/bird-study.webp", "label": "Bird study", "alt": "Close-up of the articulated gull model and feathered wings" }
       ],
       "demo": "https://varnholt.github.io/tinyflock/",
-      "tech": "C++23 · WebAssembly"
+      "tech": "C++23 · Rust · WebAssembly"
     },
     "tinyshp": {
       "group": "libraries",
