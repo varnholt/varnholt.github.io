@@ -165,6 +165,17 @@
     "archived": false
   },
   {
+    "name": "tinyflock",
+    "description": "Single-header C++23 flocking simulation with predictive avoidance, obstacles and an animated glTF gull WebAssembly demo",
+    "language": "C++",
+    "stargazers_count": 0,
+    "fork": false,
+    "html_url": "https://github.com/varnholt/tinyflock",
+    "homepage": "https://varnholt.github.io/tinyflock/",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
     "name": "tinypsd",
     "description": "Single-header C++23 loader for Photoshop (.psd) files: layers, groups, unicode names, 8/16/32 bit, RLE and zip, the composite and paths; bounds checked and fuzzed",
     "language": "C++",
