@@ -37,7 +37,7 @@
   "projects": {
     "tinyflock": {
       "group": "libraries",
-      "description": "A reusable flocking simulation with predictive avoidance, obstacles and an animated gull demo against a photographic sky.",
+      "description": "A few simple rules and a sky full of birds. Play with the flock in your browser.",
       "image": "docs/flock.webp",
       "alt": "A flock of animated gulls flying against the evening sky",
       "images": [
