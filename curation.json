@@ -104,7 +104,8 @@
     "dynablaster_revenge_sdl": {
       "group": "games",
       "title": "Dynablaster Revenge · SDL",
-      "description": "The SDL3 rewrite of Dynablaster Revenge: networked multiplayer, real-time 3D rendering and a dedicated game server.",
+      "description": "The SDL3 rewrite of Dynablaster Revenge. Play the story or battle bots in your browser, or connect to a dedicated server for networked multiplayer.",
+      "demo": "https://varnholt.github.io/dynablaster_revenge_sdl/",
       "tech": "C++23 · SDL3 · OpenGL ES",
       "image": "doc/gameplay.jpg",
       "alt": "Dynablaster Revenge gameplay from the original build, representative of the SDL port's shared visuals"
