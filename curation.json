@@ -11,7 +11,7 @@
     {
       "id": "libraries",
       "title": "Tiny libraries",
-      "intro": "Small C++23 libraries for geometry, simulation, file formats and procedural worlds."
+      "intro": "Small C++23 and Rust libraries for geometry, simulation, file formats and procedural worlds."
     },
     {
       "id": "games",
@@ -61,7 +61,7 @@
       "image": "docs/images/dam_break.png",
       "alt": "A simulated volume of water breaking around a sphere",
       "demo": "https://varnholt.github.io/tinysph/",
-      "tech": "C++23 · WebGPU"
+      "tech": "C++23 · Rust · WebGPU"
     },
     "tinyverlet": {
       "group": "libraries",
@@ -69,7 +69,7 @@
       "image": "doc/testbed.png",
       "alt": "Simulated cloth sheets draped over a sphere",
       "demo": "https://varnholt.github.io/tinyverlet/",
-      "tech": "C++23 · WebGL2"
+      "tech": "C++23 · Rust · WebGL2"
     },
     "tinywfc": {
       "group": "libraries",
@@ -77,7 +77,7 @@
       "image": "doc/city.gif",
       "alt": "A procedural city assembled by wave function collapse",
       "demo": "https://varnholt.github.io/tinywfc/",
-      "tech": "C++23 · WebGL2"
+      "tech": "C++23 · Rust · WebGL2"
     },
     "tinysubdiv": {
       "group": "libraries",
@@ -85,7 +85,7 @@
       "image": "doc/levels.png",
       "alt": "The letter T at four mesh subdivision levels",
       "demo": "https://varnholt.github.io/tinysubdiv/",
-      "tech": "C++23 · WebGL2"
+      "tech": "C++23 · Rust · WebGL2"
     },
     "tinypsd": {
       "group": "libraries",
