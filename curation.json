@@ -35,6 +35,15 @@
     }
   ],
   "projects": {
+    "tinyik": {
+      "group": "libraries",
+      "description": "Two-bone inverse kinematics and FABRIK with joint limits. Bend a little wooden giraffe in your browser, driven by either C++ or Rust.",
+      "image": "docs/giraffe.png",
+      "alt": "A wooden giraffe with alternating neck beads and a flowered green base in the tinyik playground",
+      "fit": "contain",
+      "demo": "https://varnholt.github.io/tinyik/",
+      "tech": "C++23 · Rust · WebGL2"
+    },
     "tinyflock": {
       "group": "libraries",
       "description": "A few simple rules and a sky full of birds. Play with the flock in your browser.",

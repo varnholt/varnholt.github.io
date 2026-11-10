@@ -12,22 +12,11 @@
   },
   {
     "name": "clang-tidy-gui",
-    "description": null,
+    "description": "A desktop workspace for clang-tidy: choose checks, run focused C++ analysis, and apply fixes one pass at a time.",
     "language": "Rust",
     "stargazers_count": 0,
     "fork": false,
     "html_url": "https://github.com/varnholt/clang-tidy-gui",
-    "homepage": null,
-    "default_branch": "main",
-    "archived": false
-  },
-  {
-    "name": "classic_baked_vanilla_cheesecake",
-    "description": null,
-    "language": null,
-    "stargazers_count": 0,
-    "fork": false,
-    "html_url": "https://github.com/varnholt/classic_baked_vanilla_cheesecake",
     "homepage": null,
     "default_branch": "main",
     "archived": false
@@ -83,13 +72,13 @@
     "stargazers_count": 2,
     "fork": false,
     "html_url": "https://github.com/varnholt/dynablaster_revenge_sdl",
-    "homepage": null,
+    "homepage": "https://varnholt.github.io/dynablaster_revenge_sdl/",
     "default_branch": "main",
     "archived": false
   },
   {
     "name": "oneam",
-    "description": "A minimal comic book viewer (*.cbr, *.cbz, etc.)",
+    "description": "one:am \u2014 a small cross-platform comic reader for desktop, Android and the browser",
     "language": "C++",
     "stargazers_count": 0,
     "fork": false,
@@ -111,7 +100,7 @@
   },
   {
     "name": "smoothed_particle_hydrodynamics",
-    "description": "Smoothed Particle Hydrodynamics",
+    "description": "An early C++ SPH fluid simulation with a Qt/OpenGL interface and implementation notes",
     "language": "C++",
     "stargazers_count": 3,
     "fork": false,
@@ -166,12 +155,23 @@
   },
   {
     "name": "tinyflock",
-    "description": "Single-header C++23 flocking simulation with predictive avoidance, obstacles and an animated glTF gull WebAssembly demo",
+    "description": "A few simple rules and a sky full of birds. A tiny C++23 and Rust flocking library with a browser playground.",
     "language": "C++",
     "stargazers_count": 0,
     "fork": false,
     "html_url": "https://github.com/varnholt/tinyflock",
     "homepage": "https://varnholt.github.io/tinyflock/",
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "name": "tinyik",
+    "description": "Single-header C++23 and dependency-free Rust inverse kinematics: two-bone IK, FABRIK and joint limits, with an OpenGL ES 3 / WebGL2 giraffe playground.",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "html_url": "https://github.com/varnholt/tinyik",
+    "homepage": "https://varnholt.github.io/tinyik/",
     "default_branch": "main",
     "archived": false
   },
@@ -254,7 +254,7 @@
   },
   {
     "name": "touchgfx_projects",
-    "description": "TouchGFX Projects",
+    "description": "TouchGFX touchscreen projects for STM32: a chess clock with time controls, Fischer increments and a printable enclosure",
     "language": "C",
     "stargazers_count": 0,
     "fork": false,
@@ -264,13 +264,35 @@
     "archived": false
   },
   {
+    "name": "varnholt",
+    "description": "Project directory for Matthias Varnholt",
+    "language": null,
+    "stargazers_count": 0,
+    "fork": false,
+    "html_url": "https://github.com/varnholt/varnholt",
+    "homepage": null,
+    "default_branch": "main",
+    "archived": false
+  },
+  {
+    "name": "varnholt.github.io",
+    "description": "Libraries, games, tools and embedded projects by Matthias Varnholt",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "fork": false,
+    "html_url": "https://github.com/varnholt/varnholt.github.io",
+    "homepage": null,
+    "default_branch": "main",
+    "archived": false
+  },
+  {
     "name": "vocabulary_trainer",
-    "description": "Simple CSV file based vocabulary trainer for the PC",
+    "description": "CSV vocabulary practice for the browser and offline Android, powered by C++/WebAssembly. No account or vocabulary uploads.",
     "language": "C++",
     "stargazers_count": 1,
     "fork": false,
     "html_url": "https://github.com/varnholt/vocabulary_trainer",
-    "homepage": null,
+    "homepage": "https://varnholt.github.io/vocabulary_trainer/",
     "default_branch": "main",
     "archived": false
   }
